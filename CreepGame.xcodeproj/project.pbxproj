@@ -8,21 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1B9086051DB94AC700CAFC74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9086041DB94AC700CAFC74 /* AppDelegate.swift */; };
-		1B9086071DB94AC700CAFC74 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1B9086061DB94AC700CAFC74 /* GameScene.sks */; };
 		1B9086091DB94AC700CAFC74 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1B9086081DB94AC700CAFC74 /* Actions.sks */; };
 		1B90860B1DB94AC700CAFC74 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90860A1DB94AC700CAFC74 /* GameScene.swift */; };
 		1B90860D1DB94AC700CAFC74 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90860C1DB94AC700CAFC74 /* GameViewController.swift */; };
 		1B9086101DB94AC700CAFC74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B90860E1DB94AC700CAFC74 /* Main.storyboard */; };
 		1B9086121DB94AC700CAFC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9086111DB94AC700CAFC74 /* Assets.xcassets */; };
 		1B9086151DB94AC700CAFC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9086131DB94AC700CAFC74 /* LaunchScreen.storyboard */; };
-		B517F6601DB9670500E04D80 /* Unit Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517F65F1DB9670500E04D80 /* Unit Object.swift */; };
+		1BAFF9451DBA7F8C00DC5E6D /* Creep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAFF9441DBA7F8C00DC5E6D /* Creep.swift */; };
+		B517F6601DB9670500E04D80 /* ObjectProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517F65F1DB9670500E04D80 /* ObjectProtocols.swift */; };
 		B517F6621DB967BB00E04D80 /* GroundTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = B517F6611DB967BB00E04D80 /* GroundTiles.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B9086011DB94AC700CAFC74 /* CreepGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreepGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9086041DB94AC700CAFC74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B9086061DB94AC700CAFC74 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		1B9086081DB94AC700CAFC74 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		1B90860A1DB94AC700CAFC74 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		1B90860C1DB94AC700CAFC74 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +29,8 @@
 		1B9086111DB94AC700CAFC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B9086141DB94AC700CAFC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B9086161DB94AC700CAFC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B517F65F1DB9670500E04D80 /* Unit Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Unit Object.swift"; sourceTree = "<group>"; };
+		1BAFF9441DBA7F8C00DC5E6D /* Creep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creep.swift; sourceTree = "<group>"; };
+		B517F65F1DB9670500E04D80 /* ObjectProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectProtocols.swift; sourceTree = "<group>"; };
 		B517F6611DB967BB00E04D80 /* GroundTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GroundTiles.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				1B9086041DB94AC700CAFC74 /* AppDelegate.swift */,
-				B517F65F1DB9670500E04D80 /* Unit Object.swift */,
-				1B9086061DB94AC700CAFC74 /* GameScene.sks */,
+				1BAFF9411DBA7F2400DC5E6D /* Protocols */,
+				1BAFF9341DBA7E4F00DC5E6D /* Models */,
 				1B9086081DB94AC700CAFC74 /* Actions.sks */,
 				1B90860A1DB94AC700CAFC74 /* GameScene.swift */,
 				1B90860C1DB94AC700CAFC74 /* GameViewController.swift */,
@@ -77,6 +77,22 @@
 				1B9086161DB94AC700CAFC74 /* Info.plist */,
 			);
 			path = CreepGame;
+			sourceTree = "<group>";
+		};
+		1BAFF9341DBA7E4F00DC5E6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BAFF9441DBA7F8C00DC5E6D /* Creep.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1BAFF9411DBA7F2400DC5E6D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B517F65F1DB9670500E04D80 /* ObjectProtocols.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9086101DB94AC700CAFC74 /* Main.storyboard in Resources */,
-				1B9086071DB94AC700CAFC74 /* GameScene.sks in Resources */,
 				B517F6621DB967BB00E04D80 /* GroundTiles.sks in Resources */,
 				1B9086121DB94AC700CAFC74 /* Assets.xcassets in Resources */,
 				1B9086151DB94AC700CAFC74 /* LaunchScreen.storyboard in Resources */,
@@ -156,8 +171,9 @@
 			files = (
 				1B90860B1DB94AC700CAFC74 /* GameScene.swift in Sources */,
 				1B90860D1DB94AC700CAFC74 /* GameViewController.swift in Sources */,
+				1BAFF9451DBA7F8C00DC5E6D /* Creep.swift in Sources */,
 				1B9086051DB94AC700CAFC74 /* AppDelegate.swift in Sources */,
-				B517F6601DB9670500E04D80 /* Unit Object.swift in Sources */,
+				B517F6601DB9670500E04D80 /* ObjectProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
