@@ -18,6 +18,7 @@ enum CreepType {
 
 class Creep: Attacking, Attackable, Moving {
     
+    var name: String = ""
     var creepType: CreepType
     var rank: Int
     
@@ -34,6 +35,72 @@ class Creep: Attacking, Attackable, Moving {
         self.creepType = creepType
         self.rank = rank
         
-        //TODO: - Initialzier switch statement to set values for stats
+        switch creepType {
+        case .balanced:
+            switch rank {
+            case 1:
+                name = "Page"
+                healthPoints = 40
+                armorPoints = 10
+                damagePoints = 10
+                range = 0.5
+                speed = 10
+            default:
+                print("Error: Creep Rank out of range in initializer")
+                fatalError()
+            }
+        case .attack:
+            switch rank {
+            case 1:
+                name = "Thug"
+                healthPoints = 40
+                armorPoints = 5
+                damagePoints = 15
+                range = 0.5
+                speed = 12
+            default:
+                print("Error: Creep Rank out of range in initializer")
+                fatalError()
+            }
+        case .tank:
+            switch rank {
+            case 1:
+                name = "Knight"
+                healthPoints = 50
+                armorPoints = 20
+                damagePoints = 5
+                range = 0.5
+                speed = 5
+            default:
+                print("Error: Creep Rank out of range in initializer")
+                fatalError()
+            }
+        case .ranged:
+            switch rank {
+            case 1:
+                name = "Slinger"
+                healthPoints = 30
+                armorPoints = 10
+                damagePoints = 15
+                range = 5
+                speed = 15
+            default:
+                print("Error: Creep Rank out of range in initializer")
+                fatalError()
+            }
+        case .mage:
+            switch rank {
+            case 1:
+                name = "Acolite"
+                healthPoints = 40
+                armorPoints = 0
+                damagePoints = 20
+                range = 3
+                speed = 10
+            default:
+                print("Error: Creep Rank out of range in initializer")
+                fatalError()
+            }
+        }
     }
 }
