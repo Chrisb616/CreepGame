@@ -15,6 +15,8 @@
 		1B9086151DB94AC700CAFC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9086131DB94AC700CAFC74 /* LaunchScreen.storyboard */; };
 		1BAFF9451DBA7F8C00DC5E6D /* Creep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAFF9441DBA7F8C00DC5E6D /* Creep.swift */; };
 		B517F6601DB9670500E04D80 /* ObjectProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517F65F1DB9670500E04D80 /* ObjectProtocols.swift */; };
+		B53464571DBB00F300396721 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B53464561DBB00F300396721 /* GameScene.sks */; };
+		B53464591DBB017200396721 /* groundTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = B53464581DBB017200396721 /* groundTileSet.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1B9086161DB94AC700CAFC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAFF9441DBA7F8C00DC5E6D /* Creep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creep.swift; sourceTree = "<group>"; };
 		B517F65F1DB9670500E04D80 /* ObjectProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectProtocols.swift; sourceTree = "<group>"; };
+		B53464561DBB00F300396721 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B53464581DBB017200396721 /* groundTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = groundTileSet.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				1BAFF9341DBA7E4F00DC5E6D /* Models */,
 				1B90860A1DB94AC700CAFC74 /* GameScene.swift */,
 				1B90860C1DB94AC700CAFC74 /* GameViewController.swift */,
+				B53464561DBB00F300396721 /* GameScene.sks */,
+				B53464581DBB017200396721 /* groundTileSet.sks */,
 				1B90860E1DB94AC700CAFC74 /* Main.storyboard */,
 				1B9086111DB94AC700CAFC74 /* Assets.xcassets */,
 				1B9086131DB94AC700CAFC74 /* LaunchScreen.storyboard */,
@@ -148,9 +154,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53464571DBB00F300396721 /* GameScene.sks in Resources */,
 				1B9086101DB94AC700CAFC74 /* Main.storyboard in Resources */,
 				1B9086121DB94AC700CAFC74 /* Assets.xcassets in Resources */,
 				1B9086151DB94AC700CAFC74 /* LaunchScreen.storyboard in Resources */,
+				B53464591DBB017200396721 /* groundTileSet.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
